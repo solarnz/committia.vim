@@ -180,6 +180,9 @@ function! committia#open(vcs)
     else
         call s:open_multicolumn(a:vcs)
     endif
+
+    "Automatically enter insert mode
+    startinsert
 endfunction
 
 let &cpo = s:save_cpo
